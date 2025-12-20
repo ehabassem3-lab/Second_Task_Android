@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceBookLogIn">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Blue"/>
+        />
+
+
+    <TextView
+        android:id="@+id/FaceBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="300sp"
+        android:text="@string/Header"
+
+        style="@style/Header"
+
+
+/>
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/FaceBook"
+        android:layout_marginHorizontal="20sp"
+        android:hint="  Email or Phone Numbner"
+        style="@style/Email"
+
+
+
+        />
+    <EditText
+        android:id="@+id/EditPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mail"
+        android:layout_marginHorizontal="20sp"
+        android:hint="  Password"
+        style="@style/Pass"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/Submit"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/EditPass"/>
+
+    <TextView
+        android:id="@+id/fotter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Sign Up For FaceBook"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fotter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Help Center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
