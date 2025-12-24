@@ -1,8 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MyApplication" parent="Theme.MaterialComponents.DayNight">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/Blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
@@ -10,60 +11,16 @@
         <item name="backgroundColor">#4267B2</item>
         <item name="android:width">@android:dimen/system_app_widget_background_radius</item>
     </style>
-    <style name="Header">
+    <style name="btn">
 
-        <item name="android:textSize">50sp</item>
-        <item name="android:textColor">#fff</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:padding">40dp</item>
 
     </style>
-    <style name="Email">
-        <item name="android:background">@drawable/email</item>
-        <item name="android:textColor">#000</item>
-        <item name="android:height">50dp</item>
-        <item name="marginHorizontal">10sp</item>
 
-
-
-
-    </style>
-    <style name="Login">
-        <item name="android:background">@drawable/signin</item>
-        <item name="android:textColor">#000</item>
-        <item name="android:height">50dp</item>
-
-        <item name="marginHorizontal">10sp</item>
-
-
-
-
-
-    </style>
-    <style name="Pass">
-        <item name="android:background">@drawable/password</item>
-        <item name="android:textColor">#000</item>
-        <item name="android:height">50dp</item>
-        <item name="marginHorizontal">10sp</item>
-
-
-
-
-    </style>
-    <style name="hotels">
-        <item name="background">@drawable/email</item>
-        <item name="android:padding">20dp</item>
-        <item name="android:textSize">30dp</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textStyle">bold</item>
-        <item name="layout_constraintStart_toStartOf">@id/Image</item>
-        <item name="layout_constraintBottom_toBottomOf">@id/Image</item>
-        <item name="layout_constraintEnd_toEndOf">@id/Image</item>
-
-
-
-
-    </style>
 
 
 

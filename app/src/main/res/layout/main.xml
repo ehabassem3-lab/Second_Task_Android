@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
-             android:layout_height="match_parent">
+             android:layout_height="match_parent"
+    android:padding="10dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ImageAndroid"
+            android:layout_width="340dp"
+            android:layout_height="140dp"
+            android:src="@drawable/androi"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/androidBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/btn"
+            android:text="ANDROID COURSE"
+
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ImageIos"
+            android:layout_width="340dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ios"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/iosBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/btn"
+            android:text="IOS COURSE"
+
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ImageFull"
+            android:layout_width="340dp"
+            android:layout_height="140dp"
+            android:src="@drawable/fullstack"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fullBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/btn"
+            android:text="FULL STACK"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

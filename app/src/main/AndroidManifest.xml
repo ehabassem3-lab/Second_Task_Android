@@ -11,33 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".Hotels2" android:exported="true">
 
 
-        </activity>
 
-        <activity android:name=".Hotels"      android:exported="true">
+        <activity android:name=".Main" android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
-
-        </activity>
-        <activity android:name=".SecondTask"
-            android:exported="true"
-
-            >
-
-
         </activity>
 
-        <activity
-            android:name=".FaceBookLogIn"
-            android:exported="true">
-
-        </activity>
+        <activity android:name=".Ios" android:exported="true"/>
+        <activity android:name=".FullStack" android:exported="true"/>
+        <activity android:name=".Android" android:exported="true"/>
 
     </application>
 
