@@ -216,7 +216,8 @@ Part 2 (Android Development)\n
 • Firebase Push Notifications\n
 • OneSignal SDK\n
     </string>
-
+    <string name="tic_tac_toe">Tic-Tac-Toe</string>
+    <string name="pick_who">Pick Who Goes First</string>
 
 
 </resources>

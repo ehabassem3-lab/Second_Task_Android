@@ -24,7 +24,7 @@ public class XO extends AppCompatActivity {
 
     public   static  int  Score_O = 0 ;
     TextView textView ;
-
+// new
     TextView  textViewPlayersTurn;
     private Context context;
 

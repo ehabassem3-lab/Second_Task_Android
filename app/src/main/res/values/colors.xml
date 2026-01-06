@@ -6,4 +6,7 @@
     <color name="Blue">#0000FF</color>
     <color name="lightBlue">#FF8CBBF9</color>
     <color name="orange">#FFB343</color>
+    <color name="StartGradiant">#3A7BD5</color>
+    <color name="EndGradiant">#00D2FF</color>
+
 </resources>
