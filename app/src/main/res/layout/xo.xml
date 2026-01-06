@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/xo_bg"
+    android:padding="20dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        app:cardCornerRadius="40dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/TimerTv"
+            style="@style/ScoreBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="5:56" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/playersTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ScoreBoard"
+        app:layout_constraintTop_toBottomOf="@id/Timer"
+        android:text="Player 1`S Turn"
+        android:textColor="@color/white"
+        />
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playersTurn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+        app:cardCornerRadius="40dp"
+        app:cardBackgroundColor="@color/white"
+
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/BTN_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:onClick="OnPlayerClick"
+                android:padding="10dp"
+                android:tag="0"
+
+
+                app:layout_constraintBottom_toTopOf="@+id/BTN_4"
+                app:layout_constraintEnd_toStartOf="@+id/BTN_2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/BTN_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:tag="1"
+                android:onClick="OnPlayerClick"
+
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN_5"
+                app:layout_constraintEnd_toStartOf="@+id/BTN_3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/BTN_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/BTN_3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:onClick="OnPlayerClick"
+                android:tag="2"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN_6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/BTN_2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/BTN_4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:onClick="OnPlayerClick"
+                android:tag="3"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN_7"
+                app:layout_constraintEnd_toStartOf="@+id/BTN_5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BTN_1" />
+
+            <ImageView
+                android:id="@+id/BTN_5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:onClick="OnPlayerClick"
+                android:tag="4"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN_8"
+                app:layout_constraintEnd_toStartOf="@+id/BTN_6"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/BTN_4"
+                app:layout_constraintTop_toBottomOf="@+id/BTN_2" />
+
+            <ImageView
+                android:id="@+id/BTN_6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:onClick="OnPlayerClick"
+                android:tag="5"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/BTN_9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/BTN_5"
+                app:layout_constraintTop_toBottomOf="@+id/BTN_3" />
+
+            <ImageView
+                android:id="@+id/BTN_7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:onClick="OnPlayerClick"
+                android:tag="6"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/BTN_8"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BTN_4" />
+
+            <ImageView
+                android:id="@+id/BTN_8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:onClick="OnPlayerClick"
+                android:tag="7"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/BTN_9"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/BTN_7"
+                app:layout_constraintTop_toBottomOf="@+id/BTN_5" />
+
+            <ImageView
+                android:id="@+id/BTN_9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:onClick="OnPlayerClick"
+                android:tag="8"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/BTN_8"
+                app:layout_constraintTop_toBottomOf="@+id/BTN_6" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="30dp"
+            android:paddingHorizontal="20dp"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+
+
+                android:background="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+
+
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
