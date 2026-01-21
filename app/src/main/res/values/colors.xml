@@ -8,5 +8,6 @@
     <color name="orange">#FFB343</color>
     <color name="StartGradiant">#3A7BD5</color>
     <color name="EndGradiant">#00D2FF</color>
+    <color name="Rcycle_BG">#011627</color>
 
 </resources>

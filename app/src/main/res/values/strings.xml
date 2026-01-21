@@ -218,6 +218,91 @@ Part 2 (Android Development)\n
     </string>
     <string name="tic_tac_toe">Tic-Tac-Toe</string>
     <string name="pick_who">Pick Who Goes First</string>
+   <string-array name="TxT_Dummy">
+       <item>Caffeine</item>
+       <item>Test</item>
+       <item>HGH</item>
+       <item>Tren</item>
+       <item>Carrots</item>
+       <item>Dica</item>
+       <item>Anavar</item>
+       <item>Dbol</item>
+       <item>Dummy1</item>
+       <item>Dummy2</item>
+       <item>Dummy3</item>
+       <item>Dummy4</item>
+       <item>Dummy5</item>
+       <item>Dummy6</item>
+       <item>Dummy7</item>
+       <item>Dummy8</item>
+       <item>Dummy9</item>
+       <item>Dummy10</item>
+       <item>Dummy11</item>
+       <item>Dummy12</item>
+
+   </string-array>
+    <string-array name="compound_abbr_3">
+        <item>BEN</item>
+        <item>CAF</item>
+        <item>ASP</item>
+        <item>ETH</item>
+        <item>ELH</item>
+        <item>ACE</item>
+        <item>DNA</item>
+        <item>DOP</item>
+        <item>MET</item>
+        <item>TES</item>
+        <item>SER</item>
+        <item>GLY</item>
+        <item>AAC</item>
+        <item>TOL</item>
+        <item>SUL</item>
+        <item>AMM</item>
+        <item>TSU</item>
+        <item>MET</item>
+        <item>CO2</item>
+        <item>CO2</item>
+    </string-array>
+    <string-array name="compound_abbr_2">
+
+        <item>BZ</item>
+        <item>CF</item>
+        <item>AS</item>
+        <item>ET</item>
+        <item>EH</item>
+        <item>AC</item>
+        <item>DN</item>
+        <item>DP</item>
+        <item>MT</item>
+        <item>TS</item>
+        <item>SR</item>
+        <item>GY</item>
+        <item>AA</item>
+        <item>BZ</item>
+        <item>BZ</item>
+        <item>SA</item>
+        <item>AM</item>
+        <item>TU</item>
+        <item>MN</item>
+        <item>C2</item>
+    </string-array>
+    <string-array name="Profile_Name">
+
+        <item>BZ</item>
+        <item>CF</item>
+        <item>AS</item>
+        <item>ET</item>
+        <item>EH</item>
+        <item>AC</item>
+        <item>DN</item>
+        <item>DP</item>
+        <item>MT</item>
+        <item>TS</item>
+
+    </string-array>
+
+
+
 
 
 </resources>

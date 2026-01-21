@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Main"
+    >
+
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/Cardview"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_marginTop="50dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/black"
+              app:layout_constraintStart_toStartOf="parent"
+
+
+              >
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:id="@+id/First"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  >
+
+                  <androidx.appcompat.widget.AppCompatImageView
+                      android:id="@+id/ProfileImage"
+                      android:layout_width="50dp"
+                      android:layout_height="50dp"
+                      android:layout_marginLeft="20dp"
+                      android:src="@drawable/profile"
+                      app:layout_constraintStart_toStartOf="parent"
+
+                      />
+
+                  <TextView
+                      android:id="@+id/ProfileName"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:text="Ehab"
+                      android:textColor="@color/black"
+                      android:textSize="20dp"
+                      android:textStyle="bold"
+                      app:layout_constraintStart_toEndOf="@id/ProfileImage" />
+
+                  <TextView
+                      android:id="@+id/SharingTime"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:text="2 hrs 🌏 "
+                      android:textSize="15dp"
+                      android:textStyle="italic"
+                      app:layout_constraintStart_toEndOf="@id/ProfileImage"
+                      app:layout_constraintTop_toBottomOf="@id/ProfileName" />
+
+                  <TextView
+                      android:id="@+id/Dots"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+
+                      android:layout_marginRight="40dp"
+                      android:layout_marginBottom="30dp"
+                      android:text=". . . "
+                      android:textColor="@color/black"
+                      android:textSize="15dp"
+                      android:textStyle="bold"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toBottomOf="@id/ProfileName" />
+
+                  <TextView
+                      android:id="@+id/Post_Syntax"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="Dummy Text To Just Check That Everything Working"
+                      android:textStyle="bold"
+
+                      app:layout_constraintStart_toStartOf="@id/ProfileImage"
+                      app:layout_constraintTop_toBottomOf="@+id/SharingTime"
+
+                      />
+
+                  <TextView
+                      android:id="@+id/Link"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="https://DummyTextToJustCheckThat"
+                      android:textColor="@color/Blue"
+                      android:textStyle="italic"
+                      app:layout_constraintStart_toStartOf="@id/ProfileImage"
+                      app:layout_constraintTop_toBottomOf="@+id/Post_Syntax"
+
+                      />
+
+                  <androidx.appcompat.widget.AppCompatImageView
+                      android:id="@+id/PostImage"
+                      android:layout_width="match_parent"
+                      android:layout_height="250dp"
+                      android:background="@color/Blue"
+                      app:layout_constraintBottom_toTopOf="@id/reactions1"
+                      app:layout_constraintTop_toBottomOf="@+id/Link" />
+                  <LinearLayout
+                      android:id="@+id/reactions1"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:weightSum="2"
+                      app:layout_constraintTop_toBottomOf="@id/PostImage"
+
+
+                      >
+                      <androidx.appcompat.widget.AppCompatImageView
+
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:src="@drawable/baseline_thumb_up_24"
+                          android:layout_marginLeft="20dp"
+
+                          />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="12"
+                          android:layout_marginRight="130dp"
+                          android:textSize="20dp"
+                          android:textStyle="bold"
+                          android:layout_marginTop="10dp"
+                          />
+                      <androidx.constraintlayout.utils.widget.ImageFilterView
+                          android:layout_width="30dp"
+                          android:layout_height="40dp"
+
+                          android:src="@drawable/profile"
+                          android:layout_marginLeft="30dp"
+                          android:layout_gravity="center_vertical"
+                          />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="1 Share  ^"
+                          android:textSize="20dp"
+                          android:textStyle="bold"
+                          android:layout_marginTop="10dp"
+                          />
+
+
+                  </LinearLayout>
+                  <LinearLayout
+                      android:id="@+id/reactions2"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:orientation="horizontal"
+                      android:weightSum="6"
+                      app:layout_constraintTop_toBottomOf="@id/reactions1"
+
+
+                      >
+                      <androidx.appcompat.widget.AppCompatImageButton
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:src="@drawable/baseline_thumb_up_24"
+                          android:background="@color/white"
+
+                          />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Like"
+                          android:layout_weight="1"
+                          android:layout_gravity="center_vertical"
+
+                          />
+                      <androidx.appcompat.widget.AppCompatImageButton
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:src="@drawable/outline_add_comment_24"
+                          android:background="@color/white"
+
+                          />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Comment"
+                          android:layout_weight="1"
+                          android:layout_gravity="center_vertical"
+
+                          />
+
+                      <androidx.appcompat.widget.AppCompatImageButton
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:src="@drawable/round_360_24"
+                          android:background="@color/white"
+
+                          />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Share"
+                          android:layout_weight="1"
+                          android:layout_gravity="center_vertical"
+
+                          />
+
+
+
+                  </LinearLayout>
+
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+          </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
