@@ -5,19 +5,19 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Main_Recycle">
+      <SelectionState runConfigName="First_Kotlin">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Main_Recycle (2)">
+      <SelectionState runConfigName="WhatsAppMain">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Main_Recycle (1)">
+      <SelectionState runConfigName="WhatsAppMain (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="FaceBook_Recycler">
+      <SelectionState runConfigName="WhatsAppMain (2)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="FaceBook_Recycler (1)">
+      <SelectionState runConfigName="XO">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

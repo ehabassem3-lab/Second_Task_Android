@@ -57,7 +57,8 @@ public class WelcomePage extends AppCompatActivity {
 
         }
         public  static void Score_Table(){
-            X_SCORE.setText(String.valueOf(Score_X));
+        if(X_SCORE == null && O_SCORE == null ) return;
+             X_SCORE.setText(String.valueOf(Score_X));
             O_SCORE.setText(String.valueOf(Score_O));
         }
 

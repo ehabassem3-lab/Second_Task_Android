@@ -41,8 +41,8 @@ public class XO extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.xo);
-        WelcomePage.Score_Table();
         textView = findViewById(R.id.TimerTv);
+        WelcomePage.Score_Table();
 
 
         Log.e("The Counter",counter+"");

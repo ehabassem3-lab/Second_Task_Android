@@ -28,7 +28,8 @@
 
 
         <activity android:name=".Main" android:exported="true"/>
-        <activity android:name=".FaceBook_Recycler" android:exported="true">
+        <activity android:name=".FaceBook_Recycler" android:exported="true"/>
+        <activity android:name=".First_Kotlin" android:exported="true">
 
 
         </activity>
@@ -38,6 +39,7 @@
         </activity>
         <activity android:name=".FullStack" android:exported="true"/>
         <activity android:name=".Android" android:exported="true"/>
+        <activity android:name=".Fragments.WhatsAppMain" android:exported="true"/>
 
     </application>
 
