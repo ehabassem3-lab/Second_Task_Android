@@ -18,7 +18,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".Main_Recycle" android:exported="true"/>
+        <activity android:name="Recycle_View.Main_Recycle" android:exported="true"/>
 
         <activity android:name=".WelcomePage" android:exported="true"/>
 
@@ -28,8 +28,8 @@
 
 
         <activity android:name=".Main" android:exported="true"/>
-        <activity android:name=".FaceBook_Recycler" android:exported="true"/>
-        <activity android:name=".First_Kotlin" android:exported="true">
+        <activity android:name="Recycle_View.FaceBook_Recycler" android:exported="true"/>
+        <activity android:name="Recycle_View.First_Kotlin" android:exported="true">
 
 
         </activity>

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package Recycle_View;
 
 public class FaceBook_Model  {
     int ProfileImage;

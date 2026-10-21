@@ -1,10 +1,12 @@
-package com.example.myapplication
+package Recycle_View
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import Recycle_View.Kotlin_DataModel
+import com.example.myapplication.R
 
 class First_Kotlin : AppCompatActivity() {
     var Images: IntArray = intArrayOf(

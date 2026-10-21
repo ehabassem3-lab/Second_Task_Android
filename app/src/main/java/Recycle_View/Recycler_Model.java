@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package Recycle_View;
 
 public class Recycler_Model {
     String FullName ;

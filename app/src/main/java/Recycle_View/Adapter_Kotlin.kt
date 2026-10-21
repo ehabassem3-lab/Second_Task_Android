@@ -1,4 +1,4 @@
-package com.example.myapplication
+package Recycle_View
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import Recycle_View.Kotlin_DataModel
+import com.example.myapplication.R
 
 class Adapter_Kotlin
     (var AminoListL: ArrayList<Kotlin_DataModel>) : RecyclerView.Adapter<Adapter_Kotlin.AminoViewHolder>() {

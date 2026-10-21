@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package Recycle_View;
 
 import android.content.Context;
 import android.util.Log;
@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplication.R;
+
 import java.util.ArrayList;
-import java.util.function.LongFunction;
-import java.util.zip.Inflater;
 
 public class Adabter_Amino extends RecyclerView.Adapter<Adabter_Amino.MyViewHolder> {
     ArrayList<Recycler_Model> AminoAcidsArraylist;
